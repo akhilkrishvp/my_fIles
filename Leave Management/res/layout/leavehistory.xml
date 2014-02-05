@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/bg">
+    
+    
+    <TextView
+        android:id="@+id/leavehistory"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:background="@drawable/headhistory"
+        android:textAlignment="center"
+        android:textSize="28dp" />
+
+    <LinearLayout
+         android:id="@+id/layoutremaingleaves"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:onClick="status"
+        android:layout_below="@+id/leavehistory"
+        android:layout_marginTop="18dp" 
+        >
+
+        <TextView
+            android:id="@+id/remaingleaves"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:background="@drawable/leavestatus"
+            android:gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="20dp"
+            
+            android:layout_gravity="center"
+            android:textSize="23dp"
+            android:clickable="true"
+            android:onClick="status" />
+
+    </LinearLayout>
+
+    <LinearLayout
+         android:id="@+id/layout_dls"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/layoutremaingleaves"
+        android:layout_height="wrap_content"
+       android:background="@drawable/heading"
+       
+        
+        android:layout_marginTop="20dp">
+
+    </LinearLayout>
+    
+    
+<ListView android:id="@+id/list"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+  
+    ></ListView>
+</LinearLayout>

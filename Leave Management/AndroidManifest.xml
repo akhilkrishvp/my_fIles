@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="leavemanagement.spectrum.net.in"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        <activity
+            android:name="leavemanagement.spectrum.net.in.Splash"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Administrator"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".History"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".EmployeMainpage"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ApplyForLeave"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".CalendarActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="Leave_Status_Popup"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name=".History_Popup"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name=".View_Reqest_Popup"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".View_Request"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".EditForLeave"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

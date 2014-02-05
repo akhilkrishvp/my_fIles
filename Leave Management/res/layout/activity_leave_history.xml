@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LeaveHistory" >
+
+    <TextView
+        android:id="@+id/leavehistory"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="Leave History"
+        android:textAlignment="center"
+        android:textSize="28dp" />
+
+    <LinearLayout
+         android:id="@+id/layoutremaingleaves"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/leavehistory"
+        android:layout_marginTop="18dp" >
+
+        <TextView
+            android:id="@+id/remaingleaves"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remaing Leaves : "
+            android:textSize="23dp" />
+
+        <TextView
+            android:id="@+id/balanceleave"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="23dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+         android:id="@+id/layout_dls"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/layoutremaingleaves"
+        android:layout_height="wrap_content"
+        android:weightSum="3" 
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" 
+            android:layout_weight="1">
+            <TextView
+            android:id="@+id/textView_date"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Date"
+            android:textAlignment="center"
+            android:textSize="23dp" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" 
+            
+            android:layout_weight="1">
+            
+             <TextView
+            android:id="@+id/textView_ldays"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Leave Days"
+            android:textAlignment="center"
+            android:textSize="23dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            
+            android:layout_weight="1" >
+
+             <TextView
+            android:id="@+id/textView_status"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Status"
+            android:textAlignment="center"
+            android:textSize="23dp" />
+            
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/layout_dls"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+        <ListView 
+    android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list1"
+    ></ListView>
+<!--
+        <ScrollView
+            android:id="@+id/scrollView_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/layoutlist_list" 
+                >
+               
+                
+            </LinearLayout>
+        </ScrollView>
+          -->
+
+    </LinearLayout>
+
+</RelativeLayout>
